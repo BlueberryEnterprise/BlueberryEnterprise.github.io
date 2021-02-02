@@ -51,7 +51,7 @@ $('.nav-link').click(function(){
   }, 150);
 });
 
-$('.nav-brand').click(function(){
+$('.navbar-brand').click(function(){
     divId = $(this).attr('href');
     $('html, body').animate({
         scrollTop: $(divId).offset().top -100
