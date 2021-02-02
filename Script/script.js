@@ -50,3 +50,10 @@ $('.nav-link').click(function(){
     scrollTop: $(divId).offset().top - 70
   }, 150);
 });
+
+$('.nav-brand').click(function(){
+    divId = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(divId).offset().top -80
+    },150)
+})

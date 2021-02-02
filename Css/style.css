@@ -388,6 +388,10 @@ header, .navbar{
         padding: 20px 0;
     }
 
+    #nome{
+        font-size: 18px;
+    }
+
     /* Slider */
 
     #mainSlider .carousel-inner, #mainSlider .carousel-item{
