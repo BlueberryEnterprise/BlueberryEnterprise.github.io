@@ -1,52 +1,45 @@
-/* Function Navbar */
+/* função de alterar a cor da navbar */
+const target = document.querySelectorAll('[data-color]');
+const colorClass = 'colorNav'
+
+
+function colorNav(){
+    const windowTop = window.scrollY
+    target.forEach((e)=>{
+       if(windowTop > 300){
+           e.classList.add(colorClass)
+       }else{
+           e.classList.remove(colorClass)
+       }
+    })
+    
+}
+
+window.addEventListener('scroll', ()=>{
+    colorNav()
+})
+
+
+function sizeOfThings(){
+    var windowWidth = window.innerWidth;
+    let navbar = document.querySelectorAll('.navbar-nav')
+    navbar.forEach((e)=>{
+        if(windowWidth < 992){
+            e.classList.add(colorClass)
+        }else{
+            e.classList.remove(colorClass)
+        }
+    })
+    
+};
+window.addEventListener('resize', sizeOfThings)
+sizeOfThings();
+
+
+/* função ocultar item quando clickado */
 
 $('.nav-link').on('click', function(){
     $(".navbar-collapse").collapse("hide");
     
 });
 
-/* Filtro Galeria */
-
-$('.filter-btn').on('click', function(){
-    let type = $(this).attr('id');
-    let boxes = $('.galery-box');
-
-    $('.main-btn').removeClass('active');
-    $(this).addClass('active');
-
-
-    if(type == 'cortes-btn'){
-        eachBoxes('cortes', boxes)
-    }else if( type == 'slao-btn'){
-        eachBoxes('slao', boxes)
-    }else{
-        eachBoxes('all', boxes)
-    }
-
-
-});
-
-function eachBoxes(type, boxes){
-    if(type == 'all'){
-        $(boxes).fadeIn();
-    }else{
-        $(boxes).each(function(){
-            if(!$(this).hasClass(type)){
-                $(this).fadeOut('slow')
-            }else{
-                $(this).fadeIn('')
-            }
-        })
-    }
-}
-
-/* scroll para secoes */
-
-var divId;
-
-$('.nav-link').click(function(){    
-  divId = $(this).attr('href');
-   $('html, body').animate({
-    scrollTop: $(divId).offset().top - 70
-  }, 150);
-});

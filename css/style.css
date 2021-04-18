@@ -27,7 +27,8 @@ p, li {
 
 [data-color], header, .navbar{
     background-color: transparent;
-    transition: .2s;
+    transition: .3s;
+    
 }
 
 .navbar{
@@ -71,6 +72,7 @@ p, li {
     border: 3px solid #cf974f;
     background-color: transparent;
 }
+
 
 .colorNav{
     background-color: #222;
@@ -469,6 +471,11 @@ p, li {
     /* geral */
     p{
         font-size: 18px;
+    }
+
+
+    .services-box{
+        margin: auto;
     }
 
     /* Navbar */
