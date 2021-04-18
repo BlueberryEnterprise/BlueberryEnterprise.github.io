@@ -6,7 +6,7 @@ const colorClass = 'colorNav'
 function colorNav(){
     const windowTop = window.scrollY
     target.forEach((e)=>{
-       if(windowTop > 300){
+       if(windowTop > 100){
            e.classList.add(colorClass)
        }else{
            e.classList.remove(colorClass)
@@ -32,7 +32,7 @@ function sizeOfThings(){
     })
     
 };
-window.addEventListener('resize', sizeOfThings)
+
 sizeOfThings();
 
 
