@@ -25,7 +25,7 @@
 
 
 </head>
-<body>
+<body >
 
     <!-- NavBar -->  
     
@@ -57,9 +57,9 @@
                               <a href="#barbers" class="nav-link" id="barbers-menu" >BARBEIROS</a>
                             </li>
 
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a href="#galery" class="nav-link" id="galery-menu">GALERIA</a>
-                            </li>
+                            </li> -->
 
                             <li class="nav-item">
                                 <a href="#contact"  class="nav-link" id="contact-menu">AGENDAR UM HORÁRIO</a>
@@ -77,8 +77,8 @@
 		<img id="homeImage" src="./src/images/entrada.JPG" alt="Barbearia Corte Mil Grau">
 		<div id="mainTextArea">
 			<div>
-				<h1 id="textHome">Barbearia<br>Corte Mil Grau</h1>
-				<strong id="infoHome">A MELHOR BARBEARIA EM JACAREÍ</strong>
+				<h1 id="textHome" data-anime="left">Barbearia<br>Corte Mil Grau</h1>
+				<h3><strong id="infoHome" data-anime="right">A MELHOR BARBEARIA EM JACAREÍ</strong></h3>
 			</div>
 		</div>
 		
@@ -94,11 +94,11 @@
                 <h3 class="main-title" >Saiba mais</h3>
               </div>
               
-              <div class="col-md-6">
+              <div class="col-md-6" data-anime="left">
                 <img src="./src/images/salao00.JPG" class="img-fluid" alt="Salao">
               </div>
 
-              <div class="col-md-6">
+              <div class="col-md-6" data-anime="right">
                 <h3 class="about-title">Funcionamento</h3>
                 <p>Segunda: das 09:00 às 18:00 </p>
                 <p>Terça a Sexta: das 08:30 às 18:00</p>
@@ -121,7 +121,14 @@
           </div>
       </div>
 	</section>
+    <!-- Video -->
 	
+  <section>
+    <div id="mainVideoArea">
+      <iframe id="mainVideo" src="https://www.youtube.com/embed/ZWyfCayMzJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+
     <!-- Servicos da empresa -->
 	<section>
       <div id="services">
@@ -130,80 +137,29 @@
               <div class="col-12">
                 <h3 class="main-title">Serviços</h3>
               </div>
-              <div class="col-md-3 services-box">
+              <div class="col-md-4 services-box">
 				<i class="fas fa-cut"></i>
-                <h4>Cortes Tradicionais</h4>
+                <h4>Cortes Tradicionais - Barba - Bigode</h4>
               </div>
 
-              <div class="col-md-3 services-box">
-                <i class="fa fa-usd" aria-hidden="true"></i>
-                <h4>Barba</h4>
-              </div>
-
-			  <div class="col-md-3 services-box">
-                <i class="fa fa-usd" aria-hidden="true"></i>
-                <h4>Bigode</h4>
-              </div>
-
-              <div class="col-md-3 services-box">
+			        <div class="col-md-4 services-box">
                 <i class="fas fa-cut"></i>
-                <h4>Corte Degrade</h4>
-                
-              </div>
-
-			  <div class="col-md-3 services-box">
-                <i class="fas fa-cut"></i>
-                <h4>Corte Disfarçado</h4>
-              </div>
-
-              <div class="col-md-3 services-box">
-                <i class="fas fa-cut"></i>
-                <h4>Corte Dimil</h4>
-              </div>
-
-              <div class="col-md-3 services-box">
-                <i class="fas fa-cut"></i>
-                <h4>Corte Fio a Fio</h4>
+                <h4>Corte Disfarçado - Corte Dimil -Corte Fio a Fio</h4>
               </div>
 			  
-			  <div class="col-md-3 services-box">
+			        <div class="col-md-4 services-box">
                 <i class="fas fa-spray-can"></i>
-                <h4>Luzes</h4>
+                <h4>Luzes - Platinado - Pigmentação</h4>
               </div>
 
-              <div class="col-md-3 services-box">
-                <i class="fas fa-spray-can"></i>
-                <h4>Platinado</h4>
-              </div>
-
-              <div class="col-md-3 services-box">
-                <i class="fas fa-spray-can"></i>
-                <h4>Pigmentação</h4>
-              </div>
-
-			  <div class="col-md-3 services-box">
+			        <div class="col-md-4 services-box">
                 <i class="fa fa-usd" aria-hidden="true"></i>
-                <h4>Relaxamento</h4>
+                <h4>Desenhos Freestyle - Sombrancelha - Corte Degrade</h4>
               </div>
 
-			  <div class="col-md-3 services-box">
+              <div class="col-md-4 services-box">
                 <i class="fa fa-usd" aria-hidden="true"></i>
-                <h4>Desenhos Freestyle</h4>
-              </div>
-
-			  <div class="col-md-3 services-box">
-				<i class="fas fa-spray-can"></i>
-                <h4>Descoloração com Cores</h4>
-              </div>
-
-			  <div class="col-md-3 services-box">
-                <i class="fa fa-usd" aria-hidden="true"></i>
-                <h4>Sombrancelha</h4>
-              </div>
-
-			  <div class="col-md-3 services-box">
-                <i class="fa fa-usd" aria-hidden="true"></i>
-                <h4>Outros - Consulte a Disponibilidade e Horario  </h4>
+                <h4>Relaxamento - Descoloração com Cores - outros</h4>
               </div>
 
             </div>
@@ -218,11 +174,11 @@
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <h3 class="main-title">Nosso Time</h3>
+                <h3 class="main-title"id="timeName">Nosso Time</h3>
               </div>
 
-              <div class="col-md-4 centered">
-                <div class="card">
+              <div class="col-md-3 centered">
+                <div class="card" data-anime="left">
                   <img src="./src/images/perfil.jpg" class="card-img-top" alt="imagen de perfil 1">
                   <div class="card-body">
                     <h5 class="card-title">João Marcos</h5>
@@ -233,8 +189,8 @@
                 </div>
               </div>
               
-              <div class="col-md-4 centered">
-                <div class="card">
+              <div class="col-md-3 centered">
+                <div class="card" data-anime="left">
                   <img src="./src/images/perfil.jpg" class="card-img-top" alt="imagen de perfil 2">
                   <div class="card-body">
                     <h5 class="card-title">Iago Almeida</h5>
@@ -245,19 +201,19 @@
                 </div>
               </div>
 
-<!--               <div class="col-md-3 centered">
-                <div class="card">
-                  <img src="/Assets/Pictures/perfil.jpg" class="card-img-top" alt="imagen de perfil 3">
+              <div class="col-md-3 centered">
+                <div class="card" data-anime="left">
+                  <img src="./src/images/perfil.jpg" class="card-img-top" alt="imagen de perfil 3">
                     <div class="card-body">
-                    <h5 class="card-title">Vitinho Silva</h5>
+                    <h5 class="card-title">Luiz</h5>
                     <p class="card-text">Barbeiro</p>
-                    <a href="https://www.instagram.com/vitinho_csilva/" class="card-text"><i class="fab fa-instagram"></i>@vitinho_csilva</a><br>
-                    <a href="https://www.facebook.com/profile.php?id=100054455972645" class="card-text"><i class="fab fa-facebook-square"></i>Vitinho Silva</a>
+                    <!-- <a href="https://www.instagram.com/vitinho_csilva/" class="card-text"><i class="fab fa-instagram"></i></a><br>
+                    <a href="https://www.facebook.com/profile.php?id=100054455972645" class="card-text"><i class="fab fa-facebook-square"></i></a> -->
                   </div>
                 </div>
               </div>
                 
-              </div> -->
+              </div>
             </div>
         </div>
       </div>

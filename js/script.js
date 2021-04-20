@@ -4,9 +4,9 @@ const colorClass = 'colorNav'
 
 
 function colorNav(){
-    const windowTop = window.scrollY
+    const windowTop = window.pageYOffset
     target.forEach((e)=>{
-       if(windowTop > 100){
+       if(windowTop > 200){
            e.classList.add(colorClass)
        }else{
            e.classList.remove(colorClass)
@@ -15,10 +15,9 @@ function colorNav(){
     
 }
 
-window.addEventListener('scroll', ()=>{
+window.addEventListener('scroll', debounce(()=>{
     colorNav()
-})
-
+},50))
 
 function sizeOfThings(){
     var windowWidth = window.innerWidth;
@@ -43,3 +42,47 @@ $('.nav-link').on('click', function(){
     
 });
 
+/* Função de animações */
+
+const targert1 = document.querySelectorAll('[data-anime]')
+const animationClass = 'animate'
+
+function animeScroll(){
+    const topWindow = window.pageYOffset + (window.innerHeight * 0.85)
+    targert1.forEach((e)=>{
+        if((topWindow) > e.offsetTop){
+            e.classList.add(animationClass)
+        }else{
+            e.classList.remove(animationClass)
+        }
+    })
+}
+
+
+animeScroll()
+
+
+if(targert1.length){
+    window.addEventListener('scroll', debounce(()=>{
+        animeScroll()
+        console.log('asdad')
+    },100))
+}
+
+
+/* funçao Debounce */
+
+function debounce(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};
