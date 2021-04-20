@@ -66,7 +66,7 @@ if(targert1.length){
     window.addEventListener('scroll', debounce(()=>{
         animeScroll()
         console.log('asdad')
-    },100))
+    },50))
 }
 
 
