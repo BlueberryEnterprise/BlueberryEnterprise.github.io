@@ -14,11 +14,6 @@ function colorNav(){
     })
 }
 
-window.addEventListener('scroll',(()=>{
-    colorNav()
-}))
-
-
 function sizeOfThings(){
     var windowWidth = window.innerWidth;
     let navbar = document.querySelectorAll('.navbar-nav')
@@ -62,9 +57,10 @@ function animeScroll(){
 animeScroll()
 
 
-if(targert1.length){
+if(targert1.length || target.length){
     window.addEventListener('scroll', debounce(()=>{
         animeScroll()
+        colorNav()
     },100))
 }
 
