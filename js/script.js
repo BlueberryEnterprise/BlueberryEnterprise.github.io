@@ -61,7 +61,7 @@ if(targert1.length || target.length){
     window.addEventListener('scroll', debounce(()=>{
         animeScroll()
         colorNav()
-    },100))
+    },50))
 }
 
 
