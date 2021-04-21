@@ -34,6 +34,7 @@ p, li {
 .navbar{
     padding-left: 5px;
     padding-right: 5px;
+
 }
 
 #navcontainer{
@@ -517,10 +518,6 @@ p, li {
 
 [data-anime="left"]{
     transform: translate3d(-70px, 0, 0);
-}
-
-[data-anime="right"]{
-    transform: translate3d(70px, 0, 0);
 }
 
 [data-anime].animate{

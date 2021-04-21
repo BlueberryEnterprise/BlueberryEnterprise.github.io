@@ -12,12 +12,12 @@ function colorNav(){
            e.classList.remove(colorClass)
        }
     })
-    
 }
 
-window.addEventListener('scroll', debounce(()=>{
+window.addEventListener('scroll',(()=>{
     colorNav()
-},50))
+}))
+
 
 function sizeOfThings(){
     var windowWidth = window.innerWidth;
@@ -48,7 +48,7 @@ const targert1 = document.querySelectorAll('[data-anime]')
 const animationClass = 'animate'
 
 function animeScroll(){
-    const topWindow = window.pageYOffset + (window.innerHeight * 0.85)
+    const topWindow = window.pageYOffset + (window.innerHeight * 0.75)
     targert1.forEach((e)=>{
         if((topWindow) > e.offsetTop){
             e.classList.add(animationClass)
@@ -65,8 +65,7 @@ animeScroll()
 if(targert1.length){
     window.addEventListener('scroll', debounce(()=>{
         animeScroll()
-        console.log('asdad')
-    },50))
+    },100))
 }
 
 
